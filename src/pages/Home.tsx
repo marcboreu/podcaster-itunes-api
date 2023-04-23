@@ -1,9 +1,16 @@
-import React from 'react'
+import { FC } from "react";
+import Menu from "../components/Menu";
+import ListOfResults from "../components/ListOfResults";
 
-export const Home = () => {
+
+export const Home: FC = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="home">
+      <Menu />
+      <ListOfResults />
+    </div>
+  );
+};
+
 
 export default Home
