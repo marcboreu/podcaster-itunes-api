@@ -24,7 +24,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header className="header">
-      <Link to="/" onClick={() => setIsLoading(true)}>
+      <Link className="logo" to="/" onClick={() => setIsLoading(true)}>
         <h1>{APP_NAME}</h1>
       </Link>
       <div className="loader-container">

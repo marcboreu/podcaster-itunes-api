@@ -17,7 +17,7 @@ const NotFound = () => {
   }, [navigate]);
 
   return (
-    <div>
+    <div className="not-found-page">
       <h1>{ERROR_MESSAGE_PAGE_NOTFOUND}</h1>
       <p>{ERROR_MESSAGE_PAGE_NOTFOUND_SUBTITLE}</p>
     </div>

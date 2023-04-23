@@ -6,7 +6,6 @@ import CardInfo from "./components/CardInfo";
 import PodcastId from "./pages/PodcastId";
 import EpisodeId from "./pages/EpisodeId";
 import NotFound from "./pages/404";
-import "./App.css";
 
 const App = (): JSX.Element => {
   return (

@@ -27,7 +27,7 @@ export const CardList: React.FC<Props> = ({ episodesData }) => {
       </div>
       <ul className="episodes">
         <li>
-          <span className="episode">{PODCASTS_EPISODES_TITLE}</span>
+          <span className="title">{PODCASTS_EPISODES_TITLE}</span>
           <span className="date">{PODCASTS_EPISODES_DATE}</span>
           <span className="duration">{PODCASTS_EPISODES_DURATION}</span>
         </li>

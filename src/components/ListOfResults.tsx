@@ -11,17 +11,15 @@ const ListOfResults = () => {
   const hasTermSearch = searchTerm.length > 0;
 
   return (
-    <div data-testid="list-of-results">
-      <br />
-      <br />
+    <div data-testid="list-of-results" className="results">
       {loading ? (
         <LoaderPodcasts text={LOADER_PODCASTS_MAIN} />
       ) : (
         <div className="podcasts-wrapper">
           {hasTermSearch && !hasPodcastsFiltered ? (
-            <div>
+            <div className="no-results">
               {NO_RESULTS_FOR}
-              {searchTerm}
+              <span className="search-term">{searchTerm}</span>
             </div>
           ) : null}
           {hasTermSearch && hasPodcastsFiltered ? (
