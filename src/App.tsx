@@ -1,18 +1,17 @@
-import "./App.css";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-
-import NotFound from "./pages/404";
-import CardInfo from "./components/CardInfo";
+import { PodcastProvider } from "./context/PodcastContext";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import CardInfo from "./components/CardInfo";
 import PodcastId from "./pages/PodcastId";
 import EpisodeId from "./pages/EpisodeId";
+import NotFound from "./pages/404";
+import "./App.css";
 
 const App = (): JSX.Element => {
   return (
     <BrowserRouter>
+      <PodcastProvider>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,6 +24,7 @@ const App = (): JSX.Element => {
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
+      </PodcastProvider>
     </BrowserRouter>
   );
 };
