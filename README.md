@@ -1,6 +1,6 @@
 # Podcaster iTunes API
 
-Esto es a Node.js package para interactuar con la API de iTunes para obtener datos de podcast, en React, con Typescript, Vite, Jest, ESLint, Prettier, Husky, React Router DOM, React Testing Library, y más.
+Esto es un proyecto Frontend que interactua con la API de iTunes para obtener datos de una lista de podcasts, detalles del mismo y lista de episodios. Limitando la cantidad de peticiones y totalmente funcional. Construido en React, con Typescript y Vite. Jest para testing, incluye ESLint y Prettier.
 
 # Scripts
 - ### dev: Inicia un servidor de desarrollo usando Vite.
